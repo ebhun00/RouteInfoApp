@@ -17,6 +17,8 @@ As above **eom_route_info_updater** folder have **eomRouteInfoUpdater.jar**
 
 You can run **java -jar eomRouteInfoUpdater.jar**, it will automatically pick RPVans.csv from datain folder and covert CSV file to insert statements and insert into DB. Before that it will delete all records in OSFLEOM_ETL.ROUTE_INFO_STG table too.
 
+![alt text](https://github.com/ebhun00/RouteInfoApp/blob/master/data/DB_records_test.png)
+
 #You can call java -jar eomRouteInfoUpdater.jar  in your program to execute.
 
 I have dropped a RPVans.csv with 4 records for testing and executed the program,  I can see latest records.
