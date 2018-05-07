@@ -23,6 +23,12 @@ You can run **java -jar eomRouteInfoUpdater.jar**, it will automatically pick RP
 
 I have dropped a RPVans.csv with 4 records for testing and executed the program,  I can see latest records.
 
+# compile java main file with passing required libs
+```
+javac -cp "/apps/scope/RouteInfoUpdate/libs/*" -d . RouteInfoUpdates.java
+java -cp .:/apps/scope/RouteInfoUpdate/libs/*:/apps/scope/RouteInfoUpdate/script RouteInfoUpdates
+```
+
  
 
 
