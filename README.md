@@ -28,3 +28,8 @@ I have dropped a RPVans.csv with 4 records for testing and executed the program,
 
 Right Jar file is using QA environment DB connection
 #so we need to regenerate jar for prod with Prod DB details. 
+javac -cp "/apps/scope/RouteInfoUpdate/libs/*" -d . RouteInfoUpdates.java
+javac -cp "/apps/scope/RouteInfoUpdate/libs/*" -d . RouteInfoUpdates.java
+java -cp .:/apps/scope/RouteInfoUpdate/libs/*:/apps/scope/RouteInfoUpdate/script RouteInfoUpdates
+
+grep --include=\*.{log} -rnw '/apps/scope/SIF/profile-root/runtime/logs/' -e "3838"

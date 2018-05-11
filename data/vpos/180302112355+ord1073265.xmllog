@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<EntityLog SourceFile="ord1073265.dat">
+  <LogEntry Description="Number of bags for customer must be entered." ExceptionCode="BAG_FEE" Fixable="true" FixedTime="2018-03-02T11:23:55" ItemLineNo="24" LogTime="2018-03-02 11:20:31.722" LogType="FIXED" id="1" />
+  <LogEntry id="2" ItemLineNo="24" LogType="CHANGES" LogTime="2018-03-02T11:23:55" FixedTime="" Description="SuppliedQty for line 24 changed from [1] to [1]" ExceptionCode="" Fixable="false" />
+  <LogEntry id="3" ItemLineNo="24" LogType="CHANGES" LogTime="2018-03-02T11:23:55" FixedTime="" Description="OrderedQty for line 24 changed from [1] to [1]" ExceptionCode="" Fixable="false" />
+</EntityLog>
