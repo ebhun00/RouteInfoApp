@@ -30,8 +30,8 @@ public class RouteInfoUpdates {
 		Statement statement = null;
 
 		try {
-			//pass the DB details as below
-			// 
+			//Below connection details need to replaced based on environment
+			//"jdbc:oracle:thin:@host:port/service", "user", "pwd"
 			connection = DriverManager.getConnection();
 			statement = connection.createStatement();
 			statement.execute(deleteTableSQL);
