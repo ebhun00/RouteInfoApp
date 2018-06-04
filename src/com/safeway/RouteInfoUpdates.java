@@ -30,7 +30,9 @@ public class RouteInfoUpdates {
 		Statement statement = null;
 
 		try {
-			connection = DriverManager.getConnection("jdbc:oracle:thin:@ecom-rac-prod:20001/OSFLPROD", "osflca", "osfl2ca");
+			//pass the DB details as below
+			// 
+			connection = DriverManager.getConnection();
 			statement = connection.createStatement();
 			statement.execute(deleteTableSQL);
 			preparedStatement = connection.prepareStatement(insertRouteInfoSQL);
