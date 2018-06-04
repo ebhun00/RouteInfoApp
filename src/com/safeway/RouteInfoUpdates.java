@@ -262,7 +262,9 @@ public class RouteInfoUpdates {
 		Statement statement = null;
 
 		try {
-			connection = DriverManager.getConnection("jdbc:oracle:thin:@ecom-rac-qa:20001/OSFLQA", "osflca", "osfl2ca");
+			//Below connection details need to replaced based on environment
+			//"jdbc:oracle:thin:@host:port/service", "user", "pwd"
+			connection = DriverManager.getConnection();
 			
 			statement = connection.createStatement();
 			statement.execute(route_info_deleteTableSQL);
