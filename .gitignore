@@ -27,7 +27,6 @@
 /inbound/
 
 # Package Files #
-*.jar
 *.war
 *.ear
 
