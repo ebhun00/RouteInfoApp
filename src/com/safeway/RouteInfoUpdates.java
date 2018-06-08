@@ -264,7 +264,7 @@ public class RouteInfoUpdates {
 		try {
 			//Below connection details need to replaced based on environment
 			//"jdbc:oracle:thin:@host:port/service", "user", "pwd"
-			connection = DriverManager.getConnection();
+			connection = DriverManager.getConnection("jdbc:oracle:thin:@host:port/service", "user", "pwd");
 			
 			statement = connection.createStatement();
 			statement.execute(route_info_deleteTableSQL);
@@ -310,9 +310,9 @@ public class RouteInfoUpdates {
 			System.out.println("Route info & Address Data upload  to EOM is completed");
 		} catch (SQLException e) {
 			System.out.println("Connection Failed! Check output console");
-			e.printStackTrace();
-			return;
-
+//			e.printStackTrace();
+//			return;
+			System.exit(1);
 		}
 	}
 
